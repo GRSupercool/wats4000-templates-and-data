@@ -5,25 +5,25 @@
     </h1>
     <p class="search-meta">
       <span class="current-page">
-        <b>Current Page:</b> 1
+        <b>Current Page:</b> {{page}}
       </span>
       <!-- TODO: Fill in current page value from data. -->
       <span class="total-pages">
-        <b>Pages:</b> 777
+        <b>Pages:</b> {{total_pages}}
       </span>
       <!-- TODO: Fill in total pages value from data. -->
       <span class="total-results">
-        <b>Count:</b> 3232
+        <b>Count:</b>{{total_results}}
       </span>
       <!-- TODO: Fill in results count value from data. -->
     </p>
 
     <ul>
-      <li class="movie-item">
+      <li class="movie-item" v-for="(result,id) in results" :key="id">
         <!-- TODO: Use a for loop to iterate through each result in the results array. -->
         <img
-          src="https://image.tmdb.org/t/p/w150_and_h225_bestv2/p64TtbZGCElxQHpAMWmDHkWJlH2.jpg"
-          alt="Title of Movie Poster"
+          :src="'https://image.tmdb.org/t/p/w150_and_h225_bestv2/' + result.poster_path.jpg"
+          :alt="result.original_title"
           class="poster-image"
         >
         <!-- TODO: Combine base URL with poster_path value in data to make the image src URL (Hint: Use v-bind.). -->
