@@ -50,7 +50,7 @@
         <!-- TODO: Fill in the release date from the data. -->
         <ul class="genre-list">
           <!-- TODO: Use a loop to iterate through all of the genres for this movie. -->
-          <li v- for="(genre,index) in  result.genres" ;key="index">{{genre}}</li>
+          <li v- for="(genre,index) in result.genres" ;key="index">{{genre}}</li>
           <!-- TODO: Fill in the genre name from the data. -->
         </ul>
       </li>
