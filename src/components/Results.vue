@@ -50,7 +50,7 @@
           <span class="vote-count">{{result.vote_count}}</span> votes
 
 
-          <!-- TODO: Fill in the vote_average and vote_count values accordingly. -->
+        
         </div>
         <p class="overview">{{result.overview}}</p>
          
